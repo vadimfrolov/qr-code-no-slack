@@ -36,10 +36,6 @@ router.post('/sendSlack', function (req, res, next) {
 
   const slackMessage = req.body.slackmessage
 
-const bot = new SlackBot({
-  token: 'xoxb-741349782951-788814471955-94tibWy2AXo3zQdbS2HaLBff',
-  name: 'qr spy'
-});
 
 // Start Handler
 bot.on('start', () => {
